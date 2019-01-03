@@ -1,0 +1,121 @@
+
+#logo {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    background-color: #fff;
+    pointer-events: none;
+    cursor: default;
+
+    transition: opacity 2s ease 2s, height 3.5s ease 1.5s;
+    /*                 __^__    __^__      __^__    __^__
+                        [1]      [2]        [3]      [4]
+
+        [1] Time opacity takes to transition from 1 to 0;
+        [2] Time opacity waits until it starts transitioning
+        [3] Time height takes to transition from 100% to 0;
+        [4] Time height waits until it starts transitioning (>= [1] + [2]);
+    */
+}
+.preload #logo {
+    opacity: 1;
+    height: 100%;
+}
+.preload #spacer {
+    opacity: 0;
+    height: 100%;
+}
+.preload #two {
+    opacity: 0;
+    height: 100%;
+}
+.preload #three {
+    opacity: 0;
+    height: 100%;
+}
+.preload #four {
+    opacity: 0;
+    height: 100%;
+}
+
+#one{
+    padding: 20px 50px 60px;
+    background-image: linear-gradient(to right, #404040, #fef8ef);
+}
+
+nav{
+    /* background: black; */
+    background-image: linear-gradient(to right, black, gray);
+    /* background: #404040; */
+}
+
+#spacer{
+  padding-top: 50px;
+}
+
+#content{
+ padding-bottom: 50px;
+}
+
+/*Estattet av endringer i card i bootstrap.css */
+ #two{
+     /* background: #404040; */
+     background: black;
+    color: #f0fed9;
+    padding: 20px 50px 10px;
+    /* background-image: url("../pictures/order1-big.jpg"); */
+    background-size: cover;
+}
+
+#three{
+   /* background: #404040; */
+   background: black;
+   color: #f0fed9;
+   padding: 20px 50px 10px;
+   /* background-image: url("../pictures/lager2-big.jpg"); */
+   background-size: cover;
+}
+
+.hidden { display: none; }
+
+#four{
+  /* background: #404040; */
+  background: black;
+  color: #f0fed9;
+  padding: 20px 50px 10px;
+  /* background-image: url("../pictures/dokumentasjon-big.jpg"); */
+  background-size: cover;
+}
+}
+
+#two:hover{
+  /* box-shadow: 0 50px 100px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.btn-dark:hover {
+  color: #fef8ef;
+  background-color: #404040;
+  border-color: #1d2124;
+}
+/*
+#demo{
+    background: #404040;
+    color: #f0fed9;
+} */
+
+body{
+    background-image: linear-gradient(to top, #ADD8E6, #fef8ef);
+    /* background-image: url("../pictures/body2-big.jpg"); */
+    background-size: cover;
+    /* color: #f0fed9; */
+}
+
+td.one{
+  background-color: white;
+}
